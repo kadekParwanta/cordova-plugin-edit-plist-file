@@ -27,9 +27,11 @@
     
     
      <platform name="ios">
-            <preference name="BLUETOOTH_USAGE_DESCRIPTION" default="This app needs bluetooth access"/>
-            <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
-                <string>$BLUETOOTH_USAGE_DESCRIPTION</string>
+            <config-file target="*-Info.plist" parent="LSSupportsOpeningDocumentsInPlace">
+                <true/>
+            </config-file>
+            <config-file target="*-Info.plist" parent="UIFileSharingEnabled">
+                <true/>
             </config-file>
         </platform>
 
